@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Book Info</title>
+</head>
+<body>
+<!-- Elements to display book information -->
+<div id="books"></div>
+
+<script src = "./fetchBooks.js"></script>
+
+<h2>Add Book</h2>
+<form id="addBookForm" >
+    <label for="image">Book Image:</label><br>
+    <input type="file" id="image" name="image"><br>
+
+    <label for="bookName">Book Name:</label><br>
+    <input type="text" id="bookName" name="bookName"><br>
+
+    <label for="author">Author:</label><br>
+    <input type="text" id="author" name="author"><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description"></textarea><br>
+
+    <label for="genre">Genre:</label><br>
+    <input type="text" id="genre" name="genre"><br>
+
+    <label for="rating">Rating:</label><br>
+    <input type="number" min="1" max="10" step="0" id="rating" name="rating"><br>
+
+    <button type="submit">Add Book</button>
+</form>
+
+<!-- Your JavaScript code goes here -->
+<script  src = "./addBook.js"></script>
+</body>
+</body>
+</html>
